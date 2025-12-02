@@ -2,38 +2,167 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Capstone Project</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    max-width: 900px;
-    margin: auto;
-    padding: 40px;
-    line-height: 1.6;
-  }
-  h1, h2 {
-    color: #333;
-  }
+    body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        background: #f6f8fa;
+        color: #333;
+    }
+
+    /* Nav Bar */
+    nav {
+        background: #111827;
+        padding: 20px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    nav a {
+        color: white;
+        margin-right: 25px;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 80px 20px;
+        background: linear-gradient(135deg, #111827, #1f2937);
+        color: white;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+
+    .hero p {
+        font-size: 18px;
+        opacity: 0.9;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: auto;
+        padding: 40px 20px;
+    }
+
+    h2 {
+        border-left: 6px solid #1f2937;
+        padding-left: 12px;
+        font-size: 28px;
+        margin-top: 60px;
+    }
+
+    img {
+        width: 100%;
+        max-width: 700px;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+
+    .team-card {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        margin-bottom: 20px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 30px;
+        margin-top: 50px;
+        background: #111827;
+        color: white;
+    }
 </style>
 </head>
+
 <body>
 
-<h1>My Capstone Project</h1>
-<p><strong>Team Members:</strong> Your Names</p>
+<!-- Navigation -->
+<nav>
+  <a href="#overview">Overview</a>
+  <a href="#design">System Design</a>
+  <a href="#results">Results</a>
+  <a href="#demo">Demo</a>
+  <a href="#team">Team</a>
+</nav>
 
-<hr>
+<!-- Hero Section -->
+<div class="hero">
+    <h1>Your Capstone Project Title</h1>
+    <p>A professional project website showcasing problem motivation, system architecture, results, and demo.</p>
+</div>
 
-<h2>Overview</h2>
-<p>Write your project overview here.</p>
+<div class="container">
 
-<h2>System Design</h2>
-<p>Describe your system or show images.</p>
+<!-- Overview -->
+<h2 id="overview">Overview</h2>
+<p>
+Write your project background, motivation, problem statement, and contributions here.
+You can describe the context and why the project matters.
+</p>
 
-<h2>Results</h2>
-<p>Insert charts, results, and descriptions here.</p>
+<!-- System Design -->
+<h2 id="design">System Design</h2>
+<p>
+Explain your framework, architecture, hardware setup, or algorithm design.
+Upload your images into an <strong>images/</strong> folder and reference them like this:
+</p>
+<img src="images/system.png" alt="System Architecture">
 
-<h2>Demo</h2>
-<p><a href="#">Demo Link</a></p>
+<!-- Results -->
+<h2 id="results">Results</h2>
+<p>
+Describe your experiments and insert charts, tables, ablation studies, or comparisons.
+</p>
+<img src="images/results.png" alt="Experimental Results">
+
+<!-- Demo -->
+<h2 id="demo">Demo</h2>
+<p>
+You can embed a video or link to YouTube here:
+</p>
+<p><a href="https://youtube.com" target="_blank">▶ Click to Watch Demo</a></p>
+
+<!-- Team -->
+<h2 id="team">Team</h2>
+
+<div class="team-card">
+    <h3>Team Member A</h3>
+    <p>Role: algorithm / software / hardware / analysis</p>
+</div>
+
+<div class="team-card">
+    <h3>Team Member B</h3>
+    <p>Role: modeling / implementation / testing</p>
+</div>
+
+<div class="team-card">
+    <h3>Team Member C</h3>
+    <p>Role: documentation / experiment design</p>
+</div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    Capstone Project © 2025 — All Rights Reserved.
+</footer>
 
 </body>
 </html>
